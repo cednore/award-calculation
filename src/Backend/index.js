@@ -1,7 +1,3 @@
-# Award Calculation Program
-
-Renders **Transaction / Award** Table for given mock JSON response
-```
 const mockTransactions = [
   {
     customerId: "Jason",
@@ -28,4 +24,11 @@ const mockTransactions = [
     ]
   }
 ];
-```
+
+export const fetchTransactions = () => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(mockTransactions);
+    }, 2000);
+  });
+};
